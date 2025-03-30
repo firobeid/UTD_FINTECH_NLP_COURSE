@@ -2,6 +2,10 @@
 __Author__ = 'Firas Obeid'
 
 ## Syllabus: NLP in Finance Hands-on Course (13 Weeks)
+
+### Course Overview:
+
+The scope of the course is focused on language models and NLP techniques for event driven trading, but several techniques can be generalized to other disciplines as well. We will re-visit traditional NLP techniques up to the most recent advancements in language modeling. Throughout the course we will use a news headlines dataset, collected from Refinitiv’s (Reuters) API, as we go through various language modeling approaches. The course focuses on how classification, largely, is the fore front of NLP models output mechanism, and the lessons will be adapted to a research paper that the lecturer replicated and developed a language model (LM) around back in 2020. Then, we will further challenge that LM in classifying news headlines Buys/Sells with the various deep learning models starting with simple rules (heuristics) to tuning an off the shelf LLM, finally present new techniques while classification manifests as the core paradigm
 _______________________________________________________________
 ### Week 1: Survey of traditional NLP techniques
 
@@ -86,7 +90,7 @@ emb = emb / √Σ(emb)²  (L2 normalization)
 - Explain the notion of LSTMs for representation vs generation.
 
 
-### Week 5: PROEJECT 1
+### Week 5: Project 1
 
 **Descritption** : Build a story from HW1 & HW2 through analyzing the news headlines tokens, topics, token stats, news headline stats and so on. Consider this as a warm up for your final project.
 
