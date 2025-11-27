@@ -9,7 +9,7 @@
 
 ## Abstract
 
-In the domain of event-driven algorithmic trading, the ability to accurately classify news headlines into actionable "Buy" or "Sell" signals is a critical source of alpha. However, the rapid proliferation of Large Language Models (LLMs) has led to a homogenization of approaches, often ignoring the linguistic diversity inherent in financial reporting. This whitepaper details an exhaustive experimental survey conducted to design the curriculum for a specialized Quantitative Finance course. We evaluated a spectrum of Natural Language Processing (NLP) techniques, ranging from traditional lexicon-based approaches to modern Tabular Foundation Models (TabICL) and Generative AI. By applying **Dr. Marcos Lopez de Prado’s framework for False Discovery Control**, we demonstrate that no single architecture dominates the financial landscape. Instead, we identify three distinct linguistic clusters—Lexical, Semantic, and Structured—and propose a **Meta-Labeling Routing System** that dynamically assigns news headlines to specialized classifiers, maximizing the Deflated Sharpe Ratio of the resulting strategy.
+In the domain of event-driven algorithmic trading, the ability to accurately classify news headlines into actionable "Buy" or "Sell" signals is a critical source of alpha. However, the rapid proliferation of Large Language Models (LLMs) has led to a homogenization of approaches, often ignoring the linguistic diversity inherent in financial reporting. This whitepaper details an exhaustive experimental survey conducted to design the curriculum for a specialized Quantitative Finance course. We evaluated a spectrum of Natural Language Processing (NLP) techniques, ranging from traditional lexicon-based approaches to modern Tabular Foundation Models (TabICL) and Generative AI. By applying **Dr. Marcos Lopez de Prado’s framework for False Discovery Control**, we demonstrate that no single architecture dominates the financial landscape. Instead, we identify three distinct linguistic topics—Lexical, Semantic, and Structured—and propose a **Meta-Labeling Routing System** that dynamically assigns news headlines to specialized classifiers, maximizing the Deflated Sharpe Ratio of the resulting strategy.
 
 ---
 
@@ -29,7 +29,7 @@ Following the principles of *Advances in Financial Machine Learning* (Lopez de P
 1.  **False Discovery Rate (FDR) Minimization:**
     We explicitly track FDR ($1 - Precision$) in the Inference partition. A model with high accuracy but high FDR is rejected. For example, a model that predicts "Buy" 90% of the time might have high accuracy in a bull market, but its FDR indicates it is merely capturing Market Beta, not Alpha.
 2.  **Deflated Sharpe Ratio (DSR) Logic:**
-    While P&L backtests are outside the scope of this specific classification study, we apply DSR logic to the **Model Selection Process**. DSR penalizes strategies based on the number of trials (models) tested. To avoid "p-hacking" (finding a winning model purely by chance), we do not test every model on every topic randomly. Instead, we use **Hypothesis-Driven Clustering**:
+    While P&L backtests are outside the scope of this specific classification study, we apply DSR logic to the **Model Selection Process**. DSR penalizes strategies based on the number of trials (models) tested. To avoid "p-hacking" (finding a winning model purely by chance), we do not test every model on every topic randomly. Instead, we use **Hypothesis-Driven topicing**:
     *   *Hypothesis 1:* Structured news requires Tabular Models.
     *   *Hypothesis 2:* Keyword news requires Lexical Models.
     *   By restricting the "Tournament" to logically relevant models, we reduce the number of independent trials, thereby increasing the statistical significance of the winners.
@@ -67,19 +67,19 @@ The experiment utilized a concatenated dataset of daily news headlines from the 
 | 5 | FinBERT SIF SVC KNN | 0.6092 | **The Semantic Floor.** Robust performance proving that memory-based lookup is a viable strategy, though slightly outperformed by the Retrieval System. |
 | *DQ* | *Gemma-2b Decoder* | *0.6160* | *Disqualified due to 0.987 FPR (Permabull Bias).* |
 
-### 4.2 Cluster Analysis: The Heterogeneity of Alpha
+### 4.2 topic Analysis: The Heterogeneity of Alpha
 
-#### Cluster A: The Lexical Sectors (Entertainment & Earnings)
+#### topic A: The Lexical Sectors (Entertainment & Earnings)
 News in these sectors is binary and keyword-driven (e.g., "Beat," "Miss," "Blockbuster," "Flop"). Deep learning models often introduced noise by over-analyzing simple syntax.
 *   **Winning Architecture:** **Non-Context Dependent TF-IDF**.
 *   **Performance:** In the *Earnings_Ratings* sector, TF-IDF achieved a Precision of **65.54%**, significantly outperforming the KNN Benchmark (61.67%). The simplicity of term-frequency vectors proved superior for isolating high-signal keywords.
 
-#### Cluster B: The Structured Sectors (Banking & Manufacturing)
+#### topic B: The Structured Sectors (Banking & Manufacturing)
 Headlines in Investment Banking and Mechanical/Transportation often contain quasi-tabular data, such as M&A deal values, IPO pricing, or unit order specifications.
 *   **Winning Architecture:** **TabICL (Tabular In-Context Learning)**.
 *   **Performance:** TabICL achieved **67.54%** Precision in *Mechanical_Transportation*, a massive +4.5% spread over the KNN Benchmark. The model's ability to perform Bayesian inference on structured data allowed it to parse technical specifications better than semantic embeddings.
 
-#### Cluster C: The Semantic Sectors (Funds, Tech, Pharma)
+#### topic C: The Semantic Sectors (Funds, Tech, Pharma)
 These sectors are narrative-driven. "Sentiment" is hidden in the nuance of language (e.g., "cautious optimism," "regulatory headwinds").
 *   **Winning Architecture:** **FinBERT SIF Retrieval System**.
 *   **Performance:** This system achieved the highest single-sector alpha in the dataset (**68.06%** in *Financial_Funds*). By utilizing SIF-weighted embeddings from a domain-adapted BERT model, it successfully captured the "market sentiment" that keyword models missed.
