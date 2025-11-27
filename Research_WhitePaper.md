@@ -112,3 +112,33 @@ Based on these findings, we conclude that the optimal financial classifier is no
 This study demonstrates that in financial Machine Learning, "newer" is not always "better." By stepping back and challenging assumptions—testing String Kernels against Transformers and TF-IDF against LLMs—we discovered that **domain adaptation** and **architectural fit** are more valuable than raw parameter count.
 
 Furthermore, the **FinBERT_SIF_SVC_KNN** model served as a critical control variable. It proved that while "memory" (lookup tables) is a powerful baseline in finance, true alpha generation requires the generalization capabilities found in the Retrieval System and Tabular Foundation models. The resulting Meta-Labeling Router provides a robust, scientifically validated framework for event-driven trading, maximizing precision while controlling for the risks of false discovery.
+
+
+## 8. Appendix
+
+```mermaid
+graph TD
+    A[Incoming News Headline] --> B{Check 'Topic' Tag}
+    
+    %% Cluster A: Lexical Models
+    B -- Entertainment --> C[Route to: TFIDF Classifier]
+    B -- Earnings_Ratings --> C
+    
+    %% Cluster B: Tabular Models
+    B -- Investment_Banking --> D[Route to: TabICL Classifier]
+    B -- Mechanical_Transportation --> D
+    
+    %% Cluster C: Semantic Models (Default)
+    B -- Financial_Funds --> E[Route to: FinBERT SIF Retrieval]
+    B -- Technology --> E
+    B -- Pharmaceutical --> E
+    B -- OVERALL/Unknown --> E
+    
+    %% Execution
+    C --> F{Prediction > Threshold?}
+    D --> F
+    E --> F
+    
+    F -- Yes --> G[Generate BUY Signal]
+    F -- No --> H[Generate NO_BUY Signal]
+```
