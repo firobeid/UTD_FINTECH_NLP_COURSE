@@ -1,8 +1,11 @@
 # Heterogeneity in Financial Textual Analysis: A Comparative Study of Lexical, Semantic, and Structured Classifiers for Event-Driven Trading
 
-**Author:** Firas A. Obeid, MS  
-**Affiliation:** Applied Quantitative Finance & Computational Intelligence Research for a Prospectus Adjunct Applied Quant Finance / FinTech Course
-**Date:** November 2025  
+**Author:** Firas A. Obeid, MS 
+
+**Affiliation:** Applied Quantitative Finance & Computational Intelligence Research for a Prospectus Adjunct Applied Quant Finance / FinTech Course 
+
+**Date:** Fall 2026
+
 **Context:** Foundational Research for the Course: *Applied Quantitative Finance in Financial Textual Analysis & NLP*
 
 ---
