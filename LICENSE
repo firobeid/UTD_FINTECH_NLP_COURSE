@@ -1,21 +1,59 @@
-MIT License
+===============================================================================
+INTELLECTUAL PROPERTY, LICENSE, & COMMERCIAL RESTRICTION NOTICE
+===============================================================================
+Copyright (c) 2026 Firas Obeid (University of Texas at Dallas). All Rights Reserved.
 
-Copyright (c) 2025 Firas Obeid
+The educational frameworks, research methodologies, code architectures, and 
+quantitative ideas contained in this syllabus and repository are the sole 
+intellectual property of Firas Obeid.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+-------------------------------------------------------------------------------
+1. ACADEMIC & EDUCATIONAL USE (NON-COMMERCIAL)
+-------------------------------------------------------------------------------
+Non-commercial, academic, and peer-to-peer adaptations of this material are 
+permitted under the terms of the Creative Commons Attribution-NonCommercial 4.0 
+International (CC BY-NC 4.0) license. 
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Under these terms, you are free to share and adapt the material, provided that:
+- ATTRIBUTION: Proper academic citation and explicit credit to Firas Obeid 
+  (University of Texas at Dallas) is strictly provided.
+- NON-COMMERCIAL: You may not use the material for commercial purposes or 
+  monetary compensation.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+To view a copy of this license, visit:
+https://creativecommons.org
+
+-------------------------------------------------------------------------------
+2. ABSOLUTE COMMERCIAL PROHIBITION (TRADING ALPHA & CORPORATE TRAINING)
+-------------------------------------------------------------------------------
+Any use, adaptation, deployment, or derivative implementation of these ideas, 
+frameworks, or code architectures for commercial gain is STRICTLY PROHIBITED 
+under the default terms of this repository. 
+
+Prohibited commercial activities include, but are not limited to:
+- Designing, teaching, or selling commercial courses, bootcamps, workshops, 
+  seminars, or professional certificates.
+- Integrating these code architectures, research models, or pedagogical 
+  frameworks into commercial software or commercial training products.
+- Deploying or adapting these quantitative models, strategies, mathematical 
+  structures, or logic to manage capital, execute trades, or generate trading 
+  alpha at any financial institution, hedge fund, proprietary trading firm, 
+  asset management company, or algorithmic trading desk.
+
+-------------------------------------------------------------------------------
+3. MANDATORY COMMERCIAL LICENSING & PROFIT-SHARING
+-------------------------------------------------------------------------------
+Any entity or individual wishing to engage in any of the commercial activities 
+listed in Section 2 must negotiate and execute a separate, written Commercial 
+Licensing Agreement with Firas Obeid prior to any use or deployment. 
+
+This custom agreement will require mandatory terms regarding:
+- Upfront licensing fees or corporate retainers.
+- Ongoing profit-sharing, performance fee splits, or royalty payouts.
+- Equity distribution (where applicable).
+
+For commercial licensing inquiries, contact negotiations, or permissions, 
+please contact: 
+
+[feras.obeid@lau.edu - fxo180000@utdallas.edu]
+===============================================================================
