@@ -301,6 +301,7 @@ Throughout the course, students will work with real-world news headline data col
 - **Slides:** Posted before each class
 - **Announcements:** Posted for changes in assignment Expected Date/s
 - **Instructor Response Policy:** All student inquiries (emails, voice messages) will be answered within 48 hours (excluding holidays and Lessonends)
+- **Instructor NOTE** All material will be shared via github commits,  where there will be a google drive link for the Lesson plans folder that is restricted too student access only
 
 ### Attendance Policy
 Attendance is extremely important. Students are expected to attend all classes to achieve maximum success. Attendance will be taken and considered for the participation grade. The instructor's judgment of the value of contributions to class discussion will also be reflected in this grade.
