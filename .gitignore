@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+desktop.ini
+**/desktop.ini/**
+.tmp.drive*
+*.env
+
